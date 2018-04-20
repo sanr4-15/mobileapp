@@ -15,23 +15,16 @@ Backendless.Data.of( "TestTable" ).save( { foo:"bar" } )
         console.log( "got error - " + error )
     })
 */
+$(document).on("pagecreate", "#signup", function () {
+    $('#submit').on("click", function () {
+        console.log("signing up user");
 
+        var username = $('#username').val();
+        var email = $('#email').val();
+        var password = $('#password').val();
 
-
-
-
-
-
-//$(document).on("pagecreate", "#signup", function () {
-//    $('#submit').on("click", function () {
-//        console.log("signing up user");
-//
-//        var username = $('#username').val();
-//        var email = $('#email').val();
-//        var password = $('#password').val();
-//
-//        alert(username);
-//        alert(email);
-//        alert(password);
-//    });
-//});
+        alert(username);
+        alert(email);
+        alert(password);
+    });
+});
