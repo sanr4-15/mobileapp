@@ -22,7 +22,7 @@
 
     <script src="lib/jqm/jquery.mobile-1.4.5.min.js"></script>
     
-    <script src="lib/js/account.js"></script>
+   <script src="lib/js/signin.js"></script>
 
 
 </head>
@@ -44,9 +44,9 @@
             <h3>Sign In</h3>
 
             <form id="mail" action="http://www.talade.worcestercomputing.com/mailing.php" method=post>
-                <p><span><label>Email Address:</span><input class="input" id="email" type="text" placeholder="Your email@domain.com" required </label>
+                <p><span><label>Username:</span><input class="input" id="signinuser" type="text" placeholder="Your Username" required </label>
                 </p>
-                <p><span><label>Password:</span><input class="input" id="password" type="password" placeholder="Password" required </label>
+                <p><span><label>Password:</span><input class="input" id="signinpassword" type="password" placeholder="Password" required </label>
                 </p>
 
             </form>
@@ -59,7 +59,7 @@
 
             </fieldset>
 
-            <a id="btn-submit" class="ui-btn ui-btn-b ui-corner-all mc-top-margin-1-5">Sign In</a>
+            <a id="signinbtn" class="ui-btn ui-btn-b ui-corner-all mc-top-margin-1-5">Sign In</a>
 <!--            href="#dlg-invalid-credentials" data-rel="popup" data-transition="pop" data-position-to="window" -->
 
             <p class="mc-top-margin-1-5"><a href="begin-password-reset.html">Can't access your account?</a></p>
