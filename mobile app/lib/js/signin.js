@@ -3,9 +3,9 @@ var API_KEY = '0AB99E65-B7F1-3285-FF2F-3EC6292B9F00';
 
 Backendless.initApp(APP_ID, API_KEY);
 
-$(document).on("pagecreate", "#signin", function () { console.log("pagecreate");
+$(document).on("pagecreate", "#signin", function () { 
     $('#signinbtn').on("click", function () {
-        
+    console.log("signing in user");
         
         var user = $('#signinuser').val();
         var pass = $('#signinpassword').val();
