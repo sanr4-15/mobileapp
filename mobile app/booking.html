@@ -17,11 +17,13 @@
     <script src="lib/jqm/jquery-1.12.4.min.js"></script>
     <script src="https://api.backendless.com/sdk/js/latest/backendless.min.js"></script>
     <script src="lib/jqm/jquery.mobile-1.4.5.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/jtsage-datebox-jqm@4.3.1/jtsage-datebox.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="lib/js/jtsage-datebox.min.js"></script>
+    <script src="lib/js/dates.js"></script>
     
-
 </head>
-    
-    
+
+
 <body>
     <div data-role="page">
 
@@ -32,14 +34,38 @@
         </div>
         <!-- /header -->
         <img class="img" src="booking/img/logo.png">
-    
-    <h1 align="center">Welcome</h1>
-    </div>
-    
-    
-    
-    
-    
-    
+
+        <h1 align="center">Welcome</h1>
+
+
+        <form>
+            <div class="ui-field-contain">
+                <label for="select-native-2">Select Equipment:</label>
+                <select name="select-native-2" id="select-native-2" data-mini="true">
+                    <option value="1">PS4</option>
+                    <option value="2">VR Headset</option>
+                    <option value="3">Laptop</option>
+                    <option value="4">Thinkpad</option>
+                </select>
+            </div>
+        </form>
+
+        <label>Date From</label>
+        <div data-role="content"><input name="date" id="date" type="date" data-role="datebox" data-options='{"mode": "calbox","dateFormat":"%d/%m/%Y","calUsePickers": true, "calNoHeader": true,"highDates": ["2012-12-07" , "2012-07-12"] }'>
+        </div>
+        
+        <label>Date To</label>
+        <div data-role="content"><input name="date2" id="date" type="date" data-role="datebox" data-options='{"mode": "calbox","dateFormat":"%d/%m/%Y","calUsePickers": true, "calNoHeader": true,"highDates": ["2012-12-07" , "2012-07-12"] }'>
+        </div>
+        
+        <button type="submit" class="reservebtn" onclick="outsidereserve()">Reserve</button>
+        </div>
+
+
+
+
+
+
 </body>
+
 </html>
