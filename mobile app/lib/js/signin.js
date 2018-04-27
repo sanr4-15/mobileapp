@@ -18,7 +18,7 @@ $(document).on("pagecreate", "#signin", function () {
 
 
 
-
+//If user has logged in the console will show this message
 function userLoggedIn(user) {
     console.log("user has logged in");
 }
