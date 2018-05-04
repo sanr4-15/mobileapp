@@ -10,7 +10,7 @@ $(document).on("pagecreate", "#signup", function () {
         console.log("signing up user");
         //creating a new user getting the values from the username, email and password input fields
         var user = new Backendless.User();
-        user.username = $('#username').val();
+        user.userName = $('#username').val();
         user.email = $('#email').val();
         user.password = $('#password').val();
         

@@ -8,12 +8,12 @@ $(document).on("pagecreate", "#signin", function () {
 //if successful, the console shows the message when the submit button is clicked
     console.log("signing in user");
         
-        var user = $('#signinuser').val();
-        var pass = $('#signinpassword').val();
+        var userName = $('#signinuser').val();
+        var password = $('#signinpassword').val();
         
         
         //logs the user in the credentials are true
-        Backendless.UserService.login( user, pass, true).then(userLoggedIn).catch(gotError);
+        Backendless.UserService.login( userName, password, true).then(userLoggedIn).catch(gotError);
     });
 });
 
@@ -22,6 +22,7 @@ $(document).on("pagecreate", "#signin", function () {
 //If user has logged in the console will show this message
 function userLoggedIn(user) {
     console.log("user has logged in");
+    
 }
 
 function gotError(err) // see more on error handling
