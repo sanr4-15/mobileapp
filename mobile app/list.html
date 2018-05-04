@@ -17,12 +17,13 @@
     <script src="lib/jqm/jquery-1.12.4.min.js"></script>
     <script src="https://api.backendless.com/sdk/js/latest/backendless.min.js"></script>
     <script src="lib/jqm/jquery.mobile-1.4.5.min.js"></script>
-    
+    <script src="lib/js/ractive.js"></script>
+    <script src="lib/js/bookings.js"></script>
 
 </head>
 
 <body>
-    
+
     <div data-role="page" id="list">
         <div data-role="header" data-theme="c" data-add-back-btn="true">
             <h1>My Bookings</h1>
@@ -30,20 +31,30 @@
         <!-- /header -->
         <div role="main" class="ui-content">
             <img class="img" src="booking/img/logo.png">
-        <h1 align="center">Welcome</h1>
-        
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+            <h1 align="center">Welcome</h1>
+
+            <div data-role="content">
+      		
+          	<!-- RACTIVE binding location - where to display data - a ListView -->
+    		<ul data-role="listview" id='container'></ul>
             
         </div>
+
+        </div>
+        <!--Ractive template - how to display data-->
+        <script id='myTemplate' type='text/ractive'>
+
+            {{#lista}}
+            
+            <li>
+            <p> below mee{{avg_weather}}</p>
+                {{avg_weather}}
+                <p> Hayooo </p>
+            </li>
+            {{/lista}}
+
+        </script>
+
     </div>
 </body>
 </html>
