@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns   = "http://www.w3.org/ns/widgets"
-    xmlns:gap   = "http://phonegap.com/ns/1.0"
-    id          = "com.phonegap.example"
-    versionCode = "10"
-    version     = "1.0.0" >
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.example" versionCode="10" version="1.0.0">
 
-<!-- versionCode is optional and Android only -->
+    <!-- versionCode is optional and Android only -->
 
-  <name>Booking app</name>
+    <name>University of Worcester Equipment Booking</name>
 
-  <description>
-      Booking app test
-  </description>
+    <description>
+        We are your one-stop app for equipment booking in the University of Worcestershire. We make it very simple for you to get equipment such as PlayStation 4, virtual reality headsets, laptops and more. Imagine if you could make bookings and manage it from your mobile phone while walking around the city? Well, with this app, you can do that. After downloading and installing the University of Worcester Equipment Booking onto your mobile device, you will have instant access to your bookings on the go. What's more, you can create new bookings directly from your device, taking your business with you wherever you go! The best part is, you don't need to be located next to a computer terminal. As long as your mobile device has battery power and an internet connection, you're good to go. You may forget to go back to your computer to check your meetings or remove them, this app has it all ;)
+    </description>
 
-  <author href="https://build.phonegap.com" email="sanr4_15@uni.worc.ac.uk.com">
-      Hardeep Shoker
-  </author>
+    <author href="https://build.phonegap.com" email="sanr4_15@uni.worc.ac.uk.com">
+        Rei Sanchez
+    </author>
 
 </widget>
